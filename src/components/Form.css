@@ -1,0 +1,47 @@
+.place-form {
+    position: relative;
+    margin-top: 20px;
+    padding: 20px;
+    width: 25vw;
+    color: black;
+    border-radius: 15px;
+}
+
+.form-control {
+    padding: 8px;
+    margin:4px;
+}
+
+.place-form h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+}
+
+
+
+.form-control label,
+.form-control input,
+.form-control textarea {
+    display: block;
+}
+
+
+
+.form-control input {
+    width: 80%;
+    border-radius: 4px;
+}
+
+
+.form-control button{
+    margin: 5px;
+}
+.place-form a{
+    margin-left: 2%;
+    text-decoration: none;
+}
+
+.form-control p {
+    color: red;
+}
