@@ -1,22 +1,14 @@
 
 
 
-.nav {
-    margin-top: 30px;
-    display: flex;
-    justify-content:space-around;
-    margin-left: auto;
-    height: 65px;
-}
 
-.nav .ul {
-    margin-top: 13px;
+
+/* .nav .ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    width: 1300px;
-}
+ 
+} */
 
 
 .nav .ul .li {
@@ -28,9 +20,6 @@
     position: relative;
     text-decoration: none;
     background-color: red;
-    padding: 13px;
-    padding-left: 50px;
-    padding-right: 50px;
     border-radius: 5px;
     color: white;
 }
@@ -46,23 +35,12 @@
 
 
 
-.latest{
-    height:70%;
-    border:1px solid black;
-}
 
-.help{
-    height: 30%;
-    border: 1px solid black;
-}
 
 .scrollable-container {
     max-height: 200px;
-    /* Adjust height as needed */
+    
     overflow-y: auto;
-    /* Enable vertical scrollbar */
     border: 1px solid #ccc;
-    /* Optional border */
     border-radius: 4px;
-    /* Optional border radius */
 }

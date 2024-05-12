@@ -19,7 +19,7 @@ const ScholarshipTypes = () => {
               data-aos="fade-up"
               data-aos-duration="1000"
             >
-              <div className="col-4">
+              <div className="col">
                 <Card>
                   <Card.Body>
                     <div className="icon">
@@ -54,7 +54,7 @@ const ScholarshipTypes = () => {
                   </Card.Body>
                 </Card>
               </div>
-              <div className="col-4">
+              <div className="col">
                 <Card>
                   <Card.Body>
                     <div className="icon">
@@ -89,7 +89,7 @@ const ScholarshipTypes = () => {
                   </Card.Body>
                 </Card>
               </div>
-              <div className="col-4">
+              <div className="col">
                 <Card>
                   <Card.Body>
                     <div className="icon">
@@ -124,7 +124,7 @@ const ScholarshipTypes = () => {
                   </Card.Body>
                 </Card>
               </div>
-              <div className="col-4">
+              <div className="col">
                 <Card>
                   <Card.Body>
                     <div className="icon">
@@ -159,7 +159,7 @@ const ScholarshipTypes = () => {
                   </Card.Body>
                 </Card>
               </div>
-              <div className="col-4">
+              <div className="col">
                 <Card>
                   <Card.Body>
                     <div className="icon">

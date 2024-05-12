@@ -20,41 +20,30 @@ const StudentHome = () => {
     <>
       <div className="container mt-4">
         <div className="row border border primary">
-          <div className="col-4 border border primary">
-            <div className="row mb-3">
+          <div className="col border border primary">
+            <div className="row mb-3 mt-4">
               <div
-                style={{
-                  margin: "13px",
-                  width: "350px",
-                  height: "220px",
-                  border: "1px solid black",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "center",
-                }}
+                className="m-3 d-flex flex-column justify-content-center align-items-center border border-black"
+                style={{ width: "92%" }}
               >
                 <a href="#" style={{ textDecoration: "none" }}>
                   My Profile
                 </a>
-                <br />
                 <a href="#" style={{ textDecoration: "none" }}>
                   Check updates
                 </a>
-                <br />
-                <button onClick={logMeOut}>Logout</button>
+                <a href="#" style={{ textDecoration: "none" }}>
+                  Notifications
+                </a>
+                <button className="mb-3" onClick={logMeOut}>
+                  Logout
+                </button>
               </div>
             </div>
           </div>
-          <div className="col-4 border border primary">
-            <h4 style={{ marginTop: "70px", textAlign: "center" }}>Schemes</h4>
-            <ol
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-              }}
-            >
+          <div className="col border border primary">
+            <h4 className="mt-5 text-center">All Schemes</h4>
+            <ol className="justify-content-center align-items-center d-flex flex-column ">
               <li>
                 <a href="#">scheme 1</a>
               </li>
@@ -72,14 +61,9 @@ const StudentHome = () => {
               </li>
             </ol>
           </div>
-          <div className="col-4 border border primary">
-            <h3 style={{ textAlign: "center", marginTop: "40px" }}>
-              Guildlines
-            </h3>
-            <div
-              className="scrollable-container"
-              style={{ height: "150px", marginTop: "10px" }}
-            >
+          <div className="col border border primary">
+            <h3 className="text-center mt-4">Guildlines</h3>
+            <div className="scrollable-container m-2" style={{height:"65%"}}>
               xyzove example creates three equal-width columns on small, medium,
               large, and extra large devices using our predefined grid classes.
               Those columns are centered in the page with the parent . ove
@@ -93,25 +77,20 @@ const StudentHome = () => {
             </div>
           </div>
           <div className="container border">
-            <p style={{paddingLeft:"80px", paddingRight:"80px", paddingTop:"10px"}}>
+            <p className="pt-4 ps-5 pe-5">
               ra large devices using our predefined grid classes. Those columns
               are centered in the page with the parent . ove example creates
               three equal-width columns on small, medium, large, and extra large
-              devices using our predefined gri
+              devices using our predefined gripredefined grid classes. Those
+              columns are centered in the page with the parent . ove example
+              creates three equal-width columns on small, medium, large, and
+              extra large devices using our predefined gri
             </p>
-            <button
-              className="btn btn-primary"
-              style={{
-                position: "relative",
-                left: "40%",
-                width: "200px",
-                margin: "30px",
-                marginTop:"0px"
-              }}
-              onClick={onScholarClick}
-            >
-              View Scholarship
-            </button>
+            <div className='d-flex justify-content-center'>
+              <button className="btn btn-primary" onClick={onScholarClick}>
+                View Scholarship
+              </button>
+              </div>
           </div>
         </div>
       </div>

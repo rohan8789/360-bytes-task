@@ -12,32 +12,52 @@ const Navbar = () => {
   
   return (
     <>
-    {auth.isAdminLoggedIn ? <div className="container border border primary" style={{marginTop:"20px"}}><h1 style={{textAlign:"center", fontWeight:"500"}}>Institute Home Page</h1></div> : 
-      <nav className="nav navbar">
-        <div className="container border border primary">
-          <ul className="ul row">
-            {
-              !auth.isAdminLoggedIn && !auth.isStudentLoggedIn &&  <li className="li col"><NavLink to="/">Home</NavLink></li>
-            }
-            {
-              auth.isStudentLoggedIn && <li className="li col"><NavLink to="/student/home">StudentHome</NavLink></li>
-            }
-            <li className="li col">
-              <NavLink to="/about">About</NavLink>
+      {auth.isAdminLoggedIn ? (
+        <div className="container border border primary mt-3">
+          <h1 className="text-center fw-3">
+            Institute Home Page
+          </h1>
+        </div>
+      ) : (
+        <nav className="nav row container-x border border m-2 ">
+          <ul className="ul container-x row mt-3">
+            {!auth.isAdminLoggedIn && !auth.isStudentLoggedIn && (
+              <li className="li col m-2 p-3">
+                <NavLink to="/" className="ms-1 ps-5 pe-5 p-3">
+                  Home
+                </NavLink>
+              </li>
+            )}
+            {auth.isStudentLoggedIn && (
+              <li className="li col m-2 p-3">
+                <NavLink to="/student/home" className="ms-1 ps-5 pe-5 p-3">
+                  StudentHome
+                </NavLink>
+              </li>
+            )}
+            <li className="li col m-2 p-3">
+              <NavLink to="/about" className="ms-1 ps-5 pe-5 p-3">
+                About
+              </NavLink>
             </li>
 
-            <li className="li col">
-              <NavLink to="/contact">Contact</NavLink>
+            <li className="li col m-2 p-3">
+              <NavLink to="/contact" className="ms-1 ps-5 pe-5 p-3">
+                Contact
+              </NavLink>
             </li>
-            {auth.isStudentLoggedIn ? "": (
-              <li className="li col">
-                <NavLink to="/signup">Register</NavLink>
+            {auth.isStudentLoggedIn ? (
+              ""
+            ) : (
+              <li className="li col m-2 p-3">
+                <NavLink to="/signup" className="ms-1 ps-5 pe-5 p-3">
+                  Register
+                </NavLink>
               </li>
             )}
           </ul>
-        </div>
-      </nav>
-    }
+        </nav>
+      )}
     </>
   );
 };

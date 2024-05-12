@@ -1,8 +1,6 @@
 .place-form {
-    position: relative;
     margin-top: 20px;
     padding: 20px;
-    width: 25vw;
     color: black;
     border-radius: 15px;
 }
@@ -29,7 +27,7 @@
 
 
 .form-control input {
-    width: 80%;
+    width: 90%;
     border-radius: 4px;
 }
 

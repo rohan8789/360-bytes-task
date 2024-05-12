@@ -58,9 +58,9 @@ const Form = () => {
     }
   };
   return (
-    <form className="place-form" onSubmit={submitHandler}>
+    <form className="place-form border container-x" onSubmit={submitHandler}>
       <h1>Student Login</h1>
-      <div className="form-control">
+      <div className="form-control container-x ">
         <label htmlFor="email">Aadhar no: </label>
         <input
           type="text"

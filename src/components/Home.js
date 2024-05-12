@@ -14,22 +14,12 @@ const Home = () => {
     }
   return (
     <>
-      <div className="container mt-4">
+      <div className="container-x ms-5 me-5 mt-4">
         <div className="row border border primary">
-          <div className="col-4 border border primary">
+          <div className="col border border primary">
             <div className="row mb-3">
-              <div
-                style={{
-                  margin: "13px",
-                  width: "350px",
-                  height: "220px",
-                  border: "1px solid black",
-                }}
-              >
-                <div
-                  className="scrollable-container"
-                  style={{ height: "150px", marginTop: "20px" }}
-                >
+              <div className='me-4 mt-2'>
+                <div className="container border scrollable-container mt-2 mb-1">
                   xyzove example creates three equal-width columns on small,
                   medium, large, and extra large devices using our predefined
                   grid classes. Those columns are centered in the page with the
@@ -40,15 +30,8 @@ const Home = () => {
                   extra large devices using our predefined
                 </div>
               </div>
-              <div
-                style={{
-                  margin: "13px",
-                  width: "350px",
-                  height: "120px",
-                  border: "1px solid black",
-                }}
-              >
-                <address>
+              <div className='container'>
+                <address className='container mt-1 border p-2'>
                   <strong>360 Bytes tech ventures</strong>
                   <br />
                   sector 74, phase-8, 
@@ -62,10 +45,9 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="col-4 border border primary">
+          <div className="col border border primary">
             <div
-              className="scrollable-container"
-              style={{ height: "200px", marginTop: "70px" }}
+              className="scrollable-container mt-5"
             >
               xyzove example creates three equal-width columns on small, medium,
               large, and extra large devices using our predefined grid classes.
@@ -78,15 +60,16 @@ const Home = () => {
               parent . ove example creates three equal-width columns on small,
               medium, large, and extra large devices using our predefined gri
             </div>
-            <button
-              className="btn btn-primary"
-              style={{ position: "relative", left: "25%", top: "10%" }}
-              onClick={moveScholar}
-            >
-              View Scholarship
-            </button>
+            <div className='d-flex justify-content-center mt-5'>
+              <button
+                className="btn btn-primary"
+                onClick={moveScholar}
+                >
+                View Scholarship
+              </button>
+              </div>
           </div>
-          <div className="col-4 border border primary">
+          <div className="col border border primary">
             <Form />
           </div>
         </div>
